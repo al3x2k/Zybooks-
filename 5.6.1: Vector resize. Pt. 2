@@ -1,0 +1,27 @@
+#include <iostream>
+#include <vector>
+#include <iomanip>
+using namespace std;
+
+int main() {
+   vector<double> valElements;
+   int numVals;
+   unsigned int i;
+   int numValues;
+   double startNum;
+
+   cin >> numValues;
+   cin >> startNum;
+
+   valElements.resize(numValues);
+   for(i = 0; i < numValues; i++){
+      valElements.at(i) = startNum * (i+1);
+   }
+
+   for (i = 0; i < valElements.size(); ++i) {
+      cout << fixed << setprecision(1) << valElements.at(i) << " ";
+   }
+   cout << endl;
+
+   return 0;
+}
