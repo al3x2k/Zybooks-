@@ -1,0 +1,31 @@
+#include <iostream>
+#include <vector>
+#include <iomanip>
+using namespace std;
+
+int main() {
+   unsigned int i;
+   int initSize = 1;
+   vector<double> myVector(initSize);
+   int numValues;
+   double firstNum;
+   
+   myVector.at(0) = 49.5;
+   
+   cin >> numValues;
+   cin >> firstNum;
+
+   
+   myVector.resize(numValues);
+   for(i = 0; i < numValues; i++){
+      myVector.at(i) = firstNum * (i/2 + 1);
+   }
+   myVector.at(0) = 49.5;
+
+   for (i = 0; i < myVector.size(); ++i) {
+      cout << fixed << setprecision(1) << myVector.at(i) << " ";
+   }
+   cout << endl;
+
+   return 0;
+}
