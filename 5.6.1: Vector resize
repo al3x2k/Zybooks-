@@ -1,0 +1,34 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+   vector<int> listVals(7);
+   int listValsSize = listVals.size();
+   int deleteSize;
+   int i;
+   
+   listVals.at(0) = 15;
+	listVals.at(1) = 11;
+	listVals.at(2) = 14;
+	listVals.at(3) = 13;
+	listVals.at(4) = 9;
+	listVals.at(5) = 10;
+	listVals.at(6) = 12;
+   
+   cin >> deleteSize;
+   
+   for (i = 0; i < listVals.size(); ++i) {
+      cout << listVals.at(i) << " ";
+   }
+	cout << endl;
+
+   listVals.resize(listVals.size() - deleteSize);
+
+   for (i = 0; i < listVals.size(); ++i) {
+      cout << listVals.at(i) << " ";
+   }
+	cout << endl;
+
+   return 0;
+}
