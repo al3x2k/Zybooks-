@@ -1,0 +1,26 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+   int numStudents;
+   double firstStudent;
+   double lastStudent;
+   unsigned int i;
+
+   cin >> numStudents;
+   cin >> firstStudent;
+   cin >> lastStudent;
+
+   vector<double> idNumbers(numStudents);
+   idNumbers.at(0) = firstStudent;
+   idNumbers.at(numStudents - 1) = lastStudent;
+   
+
+   for (i = 0; i < idNumbers.size(); ++i) {
+      cout << idNumbers.at(i) << " ";
+   }
+   cout << endl;
+
+   return 0;
+}
