@@ -1,0 +1,29 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+   double distance1;
+	double distance2;
+	double distance3;
+	double distance4;
+	double distance5;
+	unsigned int i;
+
+   cin >> distance1;
+	cin >> distance2;
+	cin >> distance3;
+	cin >> distance4;
+	cin >> distance5;
+	
+   const int numElements = 5;
+   vector<double> swimmingDistance = { numElements};
+   swimmingDistance = {distance1, distance2, distance3, distance4, distance5};
+   
+   for (i = 0; i < swimmingDistance.size(); ++i) {
+      cout << swimmingDistance.at(i) << " ";
+   }
+   cout << endl;
+   
+   return 0;
+}
