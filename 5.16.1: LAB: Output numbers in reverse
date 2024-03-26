@@ -4,16 +4,18 @@ using namespace std;
 
 int main() {
    vector<int> userInts; // A vector to hold the user's input integers
-   int value;
-   int size;
+   int value; //stores values 
+   int size; // size of vector
 
-cin >> size;
+cin >> size;//gets size from user
 
+//stores numbers in vectors
 for (int i = 0; i < size; ++i) {
       cin >> value;
       userInts.push_back(value);
    }
   
+  //iterates backwards
   for(int i = userInts.size() - 1; i >= 0; --i){
      cout << userInts.at(i) << ",";
   }
