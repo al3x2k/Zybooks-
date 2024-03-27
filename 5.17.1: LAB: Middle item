@@ -1,0 +1,23 @@
+#include <iostream>
+#include <vector>   // Must include vector library to use vectors
+using namespace std;
+
+int main() {
+
+   vector<int> myVector; 
+   int value; //stores values 
+   
+   for(int i = 0; i <= 9; ++i)
+   {
+      if( value >= 0){
+      cin >> value;
+      myVector.push_back(value);
+      }
+   }
+   
+   int mid = myVector.size();
+   cout << "Middle item: " << myVector.at((mid - 1)/ 2) << endl;
+   
+
+   return 0;
+}
