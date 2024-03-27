@@ -1,0 +1,28 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+   int inputSize;
+   unsigned int i;
+   
+   cin >> inputSize;
+
+vector <int> quantityList(inputSize);
+vector <string> groceryList(inputSize);
+
+      for (i = 0; i < inputSize; i++) {
+      cin >> quantityList.at(i);
+   }
+   
+         for (i = 0; i < inputSize; i++) {
+      cin >> groceryList.at(i);
+   }
+   
+   for (i = 0; i < quantityList.size(); ++i) {
+      cout << "Quantity: " << quantityList.at(i) << ", ";
+      cout << "Grocery: " << groceryList.at(i) << endl;
+   }
+    
+   return 0;
+}
